@@ -3,7 +3,7 @@ Report Explanation Agent - Explains medical reports and lab results in simple la
 GUARDRAIL: Explains terminology but does NOT diagnose conditions.
 """
 
-from services.gemini_service import call_gemini
+from services.llm_service import call_llm
 
 SYSTEM_CONTEXT = """You are a medical report explanation assistant.
 You help patients understand:
@@ -28,4 +28,4 @@ def report_explanation_agent(query: str) -> str:
 Explain the medical terminology or concepts in simple language.
 Remind the patient that only their doctor can properly interpret their specific results.
 Do NOT make any diagnostic conclusions."""
-    return call_gemini(prompt, SYSTEM_CONTEXT)
+    return call_llm(prompt, SYSTEM_CONTEXT)

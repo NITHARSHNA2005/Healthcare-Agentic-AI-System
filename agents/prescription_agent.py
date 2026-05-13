@@ -3,7 +3,7 @@ Prescription Agent - Handles prescription refill requests and medication informa
 GUARDRAIL: This agent NEVER prescribes new medications or changes dosages.
 """
 
-from services.gemini_service import call_gemini
+from services.llm_service import call_llm
 
 SYSTEM_CONTEXT = """You are a healthcare prescription information assistant.
 You help patients with:
@@ -31,4 +31,4 @@ Provide helpful information while strictly following these rules:
 2. Do NOT recommend dosage changes
 3. Direct the patient to their doctor or pharmacist for actual prescription decisions
 4. You may provide general information about how to request refills or contact their healthcare provider."""
-    return call_gemini(prompt, SYSTEM_CONTEXT)
+    return call_llm(prompt, SYSTEM_CONTEXT)

@@ -17,7 +17,7 @@ from agents.report_agent import report_explanation_agent
 from agents.insurance_agent import insurance_agent
 from agents.escalation_agent import escalation_agent, is_emergency
 from agents.compliance_agent import compliance_agent
-from services.gemini_service import call_gemini
+from services.llm_service import call_llm
 from services.logger_service import logger
 
 
@@ -62,7 +62,7 @@ Query: {query}
 
 Reply with ONLY the category word (appointment/prescription/report/insurance/general):"""
 
-    intent = call_gemini(intent_prompt).strip().lower()
+    intent = call_llm(intent_prompt).strip().lower()
 
     # Validate intent
     valid_intents = ["appointment", "prescription", "report", "insurance", "general"]

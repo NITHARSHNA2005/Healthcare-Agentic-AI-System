@@ -4,7 +4,7 @@ Ensures responses don't prescribe medicine, diagnose diseases, or violate privac
 """
 
 import re
-from services.gemini_service import call_gemini
+from services.llm_service import call_llm
 
 # Patterns that indicate compliance violations in AI responses
 VIOLATION_PATTERNS = {
@@ -71,7 +71,7 @@ Reply with ONLY:
 - "COMPLIANT" if no violations found
 - "VIOLATION: [brief description]" if violations found"""
 
-    compliance_result = call_gemini(compliance_prompt)
+    compliance_result = call_llm(compliance_prompt)
     
     llm_violated = "VIOLATION" in compliance_result.upper()
     llm_notes = compliance_result if llm_violated else ""
@@ -97,4 +97,4 @@ Provide a helpful, safe response that:
 - Recommends consulting a healthcare professional
 - Is empathetic and supportive
 Keep it brief and helpful."""
-    return call_gemini(prompt)
+    return call_llm(prompt)

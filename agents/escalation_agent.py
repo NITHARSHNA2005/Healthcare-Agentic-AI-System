@@ -3,7 +3,7 @@ Escalation Agent - Handles emergency situations and critical health queries.
 Triggered for life-threatening situations requiring immediate attention.
 """
 
-from services.gemini_service import call_gemini
+from services.llm_service import call_llm
 
 SYSTEM_CONTEXT = """You are an emergency healthcare escalation assistant.
 A patient has described a potentially life-threatening situation.
@@ -44,7 +44,7 @@ Provide an immediate, calm response that:
 3. Is reassuring and supportive
 Keep it brief and actionable - this is an emergency."""
     
-    response = call_gemini(prompt, SYSTEM_CONTEXT)
+    response = call_llm(prompt, SYSTEM_CONTEXT)
     
     # Prepend emergency alert to ensure it's always visible
     emergency_header = "🚨 EMERGENCY ALERT 🚨\n\nPlease call 911 or go to your nearest Emergency Room IMMEDIATELY.\n\n"

@@ -2,7 +2,7 @@
 Appointment Agent - Handles scheduling, rescheduling, and cancellation queries.
 """
 
-from services.gemini_service import call_gemini
+from services.llm_service import call_llm
 
 SYSTEM_CONTEXT = """You are a helpful healthcare appointment assistant.
 You help patients with:
@@ -27,4 +27,4 @@ def appointment_agent(query: str) -> str:
 
 Provide helpful guidance about scheduling, rescheduling, or cancelling appointments.
 If the patient seems to need urgent care, advise them to visit the emergency room or call emergency services."""
-    return call_gemini(prompt, SYSTEM_CONTEXT)
+    return call_llm(prompt, SYSTEM_CONTEXT)

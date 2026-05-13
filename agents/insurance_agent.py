@@ -2,7 +2,7 @@
 Insurance Agent - Handles insurance coverage, claims, and billing queries.
 """
 
-from services.gemini_service import call_gemini
+from services.llm_service import call_llm
 
 SYSTEM_CONTEXT = """You are a healthcare insurance information assistant.
 You help patients with:
@@ -28,4 +28,4 @@ def insurance_agent(query: str) -> str:
 
 Provide helpful general guidance about insurance processes.
 Always remind the patient to verify specific coverage details with their insurance provider directly."""
-    return call_gemini(prompt, SYSTEM_CONTEXT)
+    return call_llm(prompt, SYSTEM_CONTEXT)

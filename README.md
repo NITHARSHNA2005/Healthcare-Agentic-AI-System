@@ -1,6 +1,6 @@
 # 🏥 Healthcare Agentic AI System
 
-A production-grade multi-agent AI system for healthcare assistance, built with Python, FastAPI, Streamlit, LangGraph, and Google Gemini 1.5 Flash.
+A production-grade multi-agent AI system for healthcare assistance, built with Python, FastAPI, Streamlit, LangGraph, and Groq Llama 3.3 70B.
 
 ---
 
@@ -34,7 +34,7 @@ Health-care-Agentic AI System/
 │   ├── escalation_agent.py
 │   └── compliance_agent.py
 ├── services/
-│   ├── gemini_service.py    # Gemini API wrapper
+│   ├── llm_service.py       # Groq Llama 3.3 70B API wrapper
 │   └── logger_service.py    # Logging configuration
 ├── database/
 │   ├── models.py            # SQLAlchemy models
@@ -52,7 +52,7 @@ Health-care-Agentic AI System/
 
 ### Prerequisites
 - Python 3.10+
-- Google Gemini API Key
+- Groq API Key (free at https://console.groq.com)
 
 ### Step 1: Clone / Navigate to project
 ```bash

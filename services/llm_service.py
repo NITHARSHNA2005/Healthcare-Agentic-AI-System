@@ -1,6 +1,6 @@
 """
-Groq API service for Healthcare AI System.
-Uses Llama 3.3 70B via Groq for fast, free inference.
+Groq LLM service for Healthcare AI System.
+Uses Llama 3.3 70B via Groq API for fast, free inference.
 """
 
 import os
@@ -16,10 +16,9 @@ client = Groq(api_key=GROQ_API_KEY)
 MODEL = "llama-3.3-70b-versatile"
 
 
-def call_gemini(prompt: str, system_context: str = "") -> str:
+def call_llm(prompt: str, system_context: str = "") -> str:
     """
     Call Groq Llama 3.3 70B with a prompt and optional system context.
-    Function name kept as call_gemini for compatibility with existing agents.
     Returns the text response or an error message.
     """
     try:
