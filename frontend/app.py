@@ -8,7 +8,7 @@ import requests
 import uuid
 from datetime import datetime
 
-BACKEND_URL = "https://healthcare-agentic-ai.up.railway.app"
+BACKEND_URL = "https://web-production-941a1.up.railway.app"
 
 st.set_page_config(
     page_title="Healthcare AI Assistant",
