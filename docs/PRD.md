@@ -1,10 +1,6 @@
 # Product Requirements Document (PRD)
 # Healthcare Agentic AI System
 
-**Version:** 1.0  
-**Author:** Nitharshna  
-**Date:** May 2025  
-**Status:** Production Ready
 
 ---
 
@@ -217,8 +213,12 @@ The following keywords trigger immediate escalation to the Escalation Agent:
 - [ ] User authentication and patient profiles
 - [ ] Advanced analytics dashboard
 
----
+----
+## 13. Conclusion
 
-## 13. Disclaimer
+The Healthcare Agentic AI System demonstrates how multi-agent AI architecture can improve healthcare support operations while maintaining patient safety, compliance and scalability. By combining LangGraph orchestration, specialized healthcare agents, emergency escalation workflows and compliance guardrails, the system is able to automate patient query handling efficiently without replacing medical professionals.
 
-This system is for demonstration and portfolio purposes only. It does not replace professional medical advice. Always consult a qualified healthcare provider for medical decisions.
+The proposed solution reduces operational burden on healthcare staff, improves patient response time and ensures that critical healthcare scenarios are escalated safely to human intervention. Real-time monitoring, logging and compliance validation further enhance transparency, auditability and system reliability.
+
+Built using FastAPI, Streamlit, LangGraph, Groq API and SQLite, the project provides a scalable and modular foundation for future healthcare AI systems. Future enhancements such as EHR integration, voice-based interaction and advanced analytics can further expand the system into a production-ready intelligent healthcare platform.
+

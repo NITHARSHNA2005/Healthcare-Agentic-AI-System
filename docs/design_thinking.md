@@ -1,8 +1,6 @@
 # Design Thinking Approach
 # Healthcare Agentic AI System
 
-**Author:** Nitharshna  
-**Date:** May 2025
 
 ---
 
@@ -168,7 +166,7 @@ Health-care-Agentic AI System/
 
 ## Stage 5 — TEST | Validate the Solution
 
-### Test Scenarios & Results
+### Test Sample Scenarios & Results
 
 | Test Query | Expected Agent | Emergency | Compliance |
 |-----------|---------------|-----------|------------|
@@ -216,7 +214,7 @@ The Healthcare Agentic AI System directly addresses all 5 steps of the candidate
 
 | Task Step | Solution Component |
 |-----------|-------------------|
-| Step 1: Understand the Problem | Empathy map — 4 stakeholders, human costs identified |
+| Step 1: Understanding the Problem | Empathy map — 4 stakeholders, human costs identified |
 | Step 2: Define Problem Statement | HMW statement with specific constraints |
 | Step 3: Design Agent System | 6 agents + LangGraph orchestrator with conditional routing |
 | Step 4: Define Guardrails | Dual-layer compliance, emergency triggers, hard stops |

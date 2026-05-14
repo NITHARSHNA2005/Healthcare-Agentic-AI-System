@@ -4,7 +4,7 @@ A production-grade multi-agent AI system for healthcare assistance, built with P
 
 ---
 
-## 🚀 Features
+##  Features
 
 - **Multi-Agent Architecture** — 6 specialized AI agents for different healthcare domains
 - **LangGraph Orchestration** — Intelligent routing with state management
@@ -17,7 +17,7 @@ A production-grade multi-agent AI system for healthcare assistance, built with P
 
 ---
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ```
 Health-care-Agentic AI System/
@@ -48,7 +48,7 @@ Health-care-Agentic AI System/
 
 ---
 
-## ⚙️ Installation & Setup
+##  Installation & Setup
 
 ### Prerequisites
 - Python 3.10+
@@ -73,9 +73,7 @@ pip install -r requirements.txt
 
 ### Step 4: Configure environment
 The `.env` file is already configured. To use your own API key:
-```
-GEMINI_API_KEY=your_api_key_here
-```
+
 
 ### Step 5: Start the system
 
@@ -96,7 +94,7 @@ streamlit run frontend/app.py --server.port 8501
 
 ---
 
-## 🤖 Agents
+## Agents
 
 | Agent | Intent | Description |
 |-------|--------|-------------|
@@ -109,7 +107,7 @@ streamlit run frontend/app.py --server.port 8501
 
 ---
 
-## 🔄 LangGraph Workflow
+##  LangGraph Workflow
 
 ```
 Query → detect_intent → [emergency?] → escalation → apply_guardrails → finalize
@@ -119,7 +117,7 @@ Query → detect_intent → [emergency?] → escalation → apply_guardrails →
 
 ---
 
-## 🛡️ Healthcare Guardrails
+##  Healthcare Guardrails
 
 1. **No Prescribing** — AI never prescribes medications or dosages
 2. **No Diagnosing** — AI never diagnoses medical conditions
@@ -129,7 +127,7 @@ Query → detect_intent → [emergency?] → escalation → apply_guardrails →
 
 ---
 
-## 🧪 Sample Test Queries
+##  Sample Test Queries
 
 **Appointments:**
 - "I need to schedule an appointment with a cardiologist"
@@ -153,7 +151,7 @@ Query → detect_intent → [emergency?] → escalation → apply_guardrails →
 
 ---
 
-## 📊 Database Schema
+## Database Schema
 
 ### query_logs
 | Column | Type | Description |
@@ -187,7 +185,7 @@ Query → detect_intent → [emergency?] → escalation → apply_guardrails →
 
 ---
 
-## 🔮 Future Enhancements
+##  Future Enhancements
 
 - [ ] User authentication and patient profiles
 - [ ] Integration with real EHR systems (Epic, Cerner)
@@ -202,12 +200,6 @@ Query → detect_intent → [emergency?] → escalation → apply_guardrails →
 
 ---
 
-## ⚠️ Disclaimer
 
-This system is for demonstration purposes only. It does not replace professional medical advice. Always consult a qualified healthcare provider for medical decisions.
 
----
 
-## 📄 License
-
-MIT License — Free to use for educational and portfolio purposes.
