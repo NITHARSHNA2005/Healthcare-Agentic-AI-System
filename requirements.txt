@@ -10,3 +10,4 @@ python-dotenv==1.0.1
 aiosqlite==0.20.0
 sqlalchemy==2.0.31
 requests==2.32.3
+langchain-groq
